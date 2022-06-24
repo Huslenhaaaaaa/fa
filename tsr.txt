@@ -1,0 +1,25 @@
+import numpy as np
+def getsimilarity(dictl, dict2) :
+    all_words_list= []
+    for  key in dictl:
+        all_words_list.append(key)
+    for key in dict2:
+           all_words_list.append(key)
+    all_words_list_size = len(all_words_list)
+
+    v1 = np.zeros(all_words_list_size, dtype=np.int)
+    v2 = np.zeros(all_words_list_size, dtype=np.int)
+    i = 0
+    for (key) in all_words_list:
+        v1[i] = dictl.get(key, 0)
+        v2[i] = dict2.get(key, 0)
+        i = i+1
+    return cos_sim(v1, v2)
+
+
+
+def cos_sim(a, b):
+    dot_product = np.dot(a, b)
+    norm_a = np.linalg.norm(a)
+    norm_b = np.linalg.norm(b)
+    return dot_product / (norm_a  * norm_b)
