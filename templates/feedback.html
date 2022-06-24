@@ -1,0 +1,45 @@
+{% extends "studenthome.html" %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>feedback</title>
+    <style>
+    th {text-align: left}
+    .submit{
+        background-color: #00bb00;
+        border : none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display:inline-block;
+        font-size: 16px;
+    }
+</style>
+</head>
+
+<body>
+<form action="" method="post">
+    <table>
+        <tr>
+            <td ><b>Post Your Feedback Here:</b></td>
+            <td><textarea style="width: 300%;height: 200%" name="textarea1" id="textarea1" class="form-control" required></textarea></td>
+
+        </tr>
+        <tr><td> <button type="submit" class="submit" id="submit" name="submit">POST</button></td></tr>
+
+    </table>
+
+</form>
+  <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+</body>
+</html>
+{% endblock %}

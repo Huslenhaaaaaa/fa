@@ -1,0 +1,26 @@
+
+{% extends "admin_home.html" %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="get"><table width=""  class="table table-hover" cellspacing="10" cellpadding="10" style="font-size:large">
+  <tr>
+
+    <th scope="row">SL.NO</th>
+    <th>FEEDBACKS FROM STUDENTS</th>
+    </tr>
+    {% for i in data %}
+
+      <td scope="row">{{ loop.index }}&nbsp;</td>
+          <td>{{ i['feedback'] }}&nbsp;</td></tr>
+ {% endfor %}
+</table>
+</form>
+</body>
+</html>
+{% endblock %}

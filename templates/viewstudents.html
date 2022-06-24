@@ -1,0 +1,87 @@
+{% extends "admin_home.html" %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>view students</title>
+</head>
+<body>
+
+<form action="" method="get" width="100%">
+  <table border="1" height="50%" class="table table-hover" cellspacing="15" cellpadding="15">
+    <tr><th colspan="9" style="font-family: Lato ;font-size: small; width: 50%"> ATTENDED</th></tr>
+
+  <tr style="font-family: Lato ;font-size: small; width: 50%">
+    <th scope="row">sl.no</th>
+    <td>Name</td>
+    <td>Age</td>
+    <td>Gender</td>
+    <td>Place</td>
+    <td>Contact</td>
+      <td>Email</td>
+    <td>Qualification</td>
+    <!--&lt;!&ndash;<td>Stream</td>&ndash;&gt;-->
+      <!--&lt;!&ndash;<td> Interest</td>&ndash;&gt;-->
+    <!--&lt;!&ndash;<td>Percentage</td>&ndash;&gt;-->
+    <!--&lt;!&ndash;<td>Skillset</td>&ndash;&gt;-->
+    <!--&lt;!&ndash;<td>IQ </td>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<td>Extraversion</td>&ndash;&gt;-->
+<!--&lt;!&ndash;<td>Agreeableness</td>&ndash;&gt;-->
+<!--&lt;!&ndash;<td>Conscientiousness</td>&ndash;&gt;-->
+<!--&lt;!&ndash;<td>Neuroticism</td>&ndash;&gt;-->
+<!--<td>Openess</td>-->
+    <td>Prediction</td>
+    </tr>
+  {% for i in data %}
+  <tr style="font-family: Lato ;font-size: small; width: 50%">
+    <th scope="row">{{ loop.index }}&nbsp;</th>
+    <td>{{ i['name'] }}&nbsp;</td>
+    <td>{{ i['age'] }}&nbsp;</td>
+    <td>{{ i['gender'] }}&nbsp;</td>
+    <td>{{ i['place'] }}&nbsp;</td>
+    <td>&nbsp;{{ i['phone'] }}</td>
+    <td>{{ i['email'] }}&nbsp;</td>
+    <td>&nbsp;{{ i['quali'] }}th&nbsp;</td>
+    <td><a href="/prediction?id={{i['std_id']}}">view more</a> </td>
+<!--{#    <td>&nbsp;{{ i['pin'] }}&nbsp;</td>#}-->
+<!--{#    <td>{{ i['religion'] }}&nbsp;</td>#}-->
+<!--{#    <td>{{ i['caste'] }}&nbsp;</td>#}-->
+<!--{#    <td>{{ i['gender'] }}&nbsp;</td>#}-->
+<!--{#    <td>{{ i['preference'] }}&nbsp;</td>#}-->
+<!--{#    <td><img src="{{ i['photo'] }}" height="100" width="100"> &nbsp;</td>#}-->
+
+  </tr>
+    {% endfor %}
+<tr><th colspan="9" style="font-family: Lato ;font-size: small; width: 50%">NOT ATTENDED</th></tr>
+     {% for i in data1 %}
+  <tr style="font-family: Lato ;font-size: small; width: 50%">
+    <th scope="row">{{ loop.index }}&nbsp;</th>
+    <td>{{ i['name'] }}&nbsp;</td>
+    <td>{{ i['age'] }}&nbsp;</td>
+    <td>{{ i['gender'] }}&nbsp;</td>
+    <td>{{ i['place'] }}&nbsp;</td>
+    <td>&nbsp;{{ i['phone'] }}</td>
+    <td>{{ i['email'] }}&nbsp;</td>
+    <td>&nbsp;{{ i['quali'] }}th&nbsp;</td>
+    <td>-</td>
+<!--{#    <td>&nbsp;{{ i['pin'] }}&nbsp;</td>#}-->
+<!--{#    <td>{{ i['religion'] }}&nbsp;</td>#}-->
+<!--{#    <td>{{ i['caste'] }}&nbsp;</td>#}-->
+<!--{#    <td>{{ i['gender'] }}&nbsp;</td>#}-->
+<!--{#    <td>{{ i['preference'] }}&nbsp;</td>#}-->
+<!--{#    <td><img src="{{ i['photo'] }}" height="100" width="100"> &nbsp;</td>#}-->
+
+  </tr>
+    {% endfor %}
+</table>
+
+
+
+
+
+</form>
+</body>
+</html>
+{% endblock %}

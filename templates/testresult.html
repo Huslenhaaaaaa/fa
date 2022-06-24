@@ -1,0 +1,31 @@
+{% extends 'studenthome.html' %}
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+
+<div>
+    <img src="../static/sample.jpg">
+</div>
+<div><br>
+    <h3>Extraversion </h3><p><h4>It is the personality trait of seeking fulfilment from sources outside the self or in comunity. High scorestent to be very social while low scores prefer to work on their own.</h4></p><br>
+    <h3>Agreeableness </h3><p><h4>It reflects how much individuals adjust their behavior to suit others. High scores are typically polite and like people. Low scores tend to 'tell it like it is'.</h4></p><br>
+    <h3>Conscientiousness </h3><p><h4>It is the personality trait of being honest and hardworking. High scores tend to follow rules and prefer clean homes. Low scores may be messy and cheat others. </h4></p><br>
+    <h3>Neuroticism </h3><p><h4>It is the personality trait of being emotional. High scores tend to have high emotional reactions to stress. Low scores emotionally stable and less reactive to stress.</h4></p><br>
+    <h3>Openess To Experience </h3><p><h4>It is the personality trait of seeking new experiences and intellectual persuits. High score may day dream a lot, or might be more creative, flexible, adventurous. Low scores might tend to enjoy routiness, predictability, and structured.</h4></p><br>
+</div><br>
+
+<h3 align="center" >YOUR IQ SCORE : {{ iq }}</h3>
+<h4 align="center">Time Taken for Completion of IQ test : {{ iqt }} minutes</h4>
+<br>
+<br>
+
+</body>
+</html>
+
+{% endblock %}

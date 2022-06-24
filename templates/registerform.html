@@ -1,0 +1,491 @@
+
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <meta name="viewport" content="width=device-width, initial-scale=1.0">#}
+{#    <meta http-equiv="X-UA-Compatible" content="ie=edge">#}
+{#    <title>Sign Up Form </title>#}
+{##}
+{#    <!-- Font Icon -->#}
+{#    <link rel="stylesheet" href="/static/registration/fonts/material-icon/css/material-design-iconic-font.min.css">#}
+{##}
+{#    <!-- Main css -->#}
+{#    <link rel="stylesheet" href="/static/registration/css/style.css">#}
+{#</head>#}
+{#<body>#}
+{#<form action="" method="post" width="100"  >#}
+{#    <div class="main">#}
+{#        <div class="container">#}
+{#            <div class="signup-content">#}
+{#                <div class="signup-form">#}
+{#                    <form method="POST" class="register-form" id="register-form">#}
+{#                        <h2>student registration form</h2>#}
+{##}
+{#                            <div class="form-group">#}
+{#                                <label for="name">Name :</label>#}
+{#                                <input type="text" name="textfield" id="textfield" required/>#}
+{#                            </div>#}
+{##}
+{#                        <div class="form-group">#}
+{#                            <label for="address">Age :</label>#}
+{#                            <input type="text" name="textfield2" id="age" required/>#}
+{#                        </div>#}
+{##}
+{#                        <div class="form-radio">#}
+{#                            <label for="gender" class="radio-label">Gender :</label>#}
+{#                            <div class="form-radio-item">#}
+{#                                <input type="radio" name="radio" id="radio" value="Male">#}
+{#                                <label for="male">Male</label>#}
+{#                                <span class="check"></span>#}
+{#                            </div>#}
+{#                            <div class="form-radio-item">#}
+{#                                <input type="radio" name="radio" id="radio2" value="Female">#}
+{#                                <label for="female">Female</label>#}
+{#                                <span class="check"></span>#}
+{#                            </div>#}
+{#                        </div>#}
+{##}
+{#                        <div class="form-row">#}
+{#                            <div class="form-group">#}
+{#                            <label for="address">Height :</label>#}
+{#                            <input type="text" name="textfield4" id="textfield4" required/>#}
+{#                        </div>#}
+{##}
+{#                          <div class="form-group">#}
+{#                            <label for="address">weight :</label>#}
+{#                            <input type="text" name="textfield5" id="textfield5" required/>#}
+{#                        </div>#}
+{#                        </div>#}
+{##}
+{#                          <div class="form-group">#}
+{#                            <label for="textfield6">Mother Tongue :</label>#}
+{#                            <input type="text" name="textfield6" id="textfield6" required/>#}
+{#                        </div>#}
+{##}
+{#                         <div class="form-group">#}
+{#                            <label for="textfield7">Any Physical Disabilities :</label>#}
+{#                            <input type="text" name="textfield7" id="textfield7" required/>#}
+{#                        </div>#}
+{##}
+{#                        <div class="form-group">#}
+{#                            <label for="course">Family Status :</label>#}
+{#                            <div class="form-select">#}
+{#                                <select name="select1" id="select1">#}
+{#                                    <option value=""></option>#}
+{#                                    <option value="Below_av">Below Average</option>#}
+{#                                    <option value="Average">Average</option>#}
+{#                                    <option value="Above_av">Above Average</option>#}
+{#                                </select>#}
+{#                                <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>#}
+{#                            </div>#}
+{#                        </div>#}
+{##}
+{#                        <div class="form-row">#}
+{#                         <div class="form-group">#}
+{#                            <label for="textfield9">Highest Qualification :</label>#}
+{#                            <input type="text" name="textfield9" id="textfield9" required/>#}
+{#                        </div>#}
+{##}
+{#                         <div class="form-group">#}
+{#                            <label for="select2">Stream :</label>#}
+{#                            <div class="form-select">#}
+{#                                <select name="select2" id="select2">#}
+{#                                    <option value=""></option>#}
+{#                                    <option value="science">Science</option>#}
+{#                                    <option value="cs">Computer Science</option>#}
+{#                                    <option value="commerce">Commerce</option>#}
+{#                                     <option value="humanities">Humanities</option>#}
+{#                                     <option value="others">Others</option>#}
+{#                                </select>#}
+{#                                <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        </div>#}
+{##}
+{#                        <div class="form-group">#}
+{#                            <label for="textfield10">Instituition :</label>#}
+{#                            <input type="text" name="textfield10" id="textfield10" required/>#}
+{#                        </div>#}
+{##}
+{#                        <div class="form-row">#}
+{#                            <div class="form-group">#}
+{#                                <label for="textfield11">From Year :</label>#}
+{#                                <input type="date" name="textfield11" id="textfield11"  required/>#}
+{#                            </div>#}
+{##}
+{#                            <div class="form-group">#}
+{#                                <label for="textfield12">To Year :</label>#}
+{#                                <input type="date" name="textfield12" id="textfield12" required/>#}
+{#                            </div>#}
+{#                        </div>#}
+{##}
+{#                         <div class="form-group">#}
+{#                            <label for="textfield13">Hobby :</label>#}
+{#                            <input type="text" name="textfield13" id="textfield13" required/>#}
+{#                        </div>#}
+{##}
+{#                         <div class="form-group">#}
+{#                            <label for="textfield14">Email ID :</label>#}
+{#                            <input type="email" name="textfield14" id="textfield14"  required/>#}
+{#                        </div>#}
+{#                         <div class="form-group">#}
+{#                            <label for="textfield15">Password :</label>#}
+{#                            <input type="password" name="textfield15" id="textfield15" required/>#}
+{#                        </div>#}
+{#                         <div class="form-group">#}
+{#                            <label for="textfield16">Confirm Password :</label>#}
+{#                            <input type="password" name="textfield16" id="textfield16" required/>#}
+{#                        </div>#}
+{##}
+{#                         <div class="form-group">#}
+{#                            <label for="textfield17">Phone Number :</label>#}
+{#                            <input type="text" name="textfield17" id="textfield17" required/>#}
+{#                        </div>#}
+{##}
+{#                          <div class="form-group">#}
+{#                            <label for="textfield18">Place:</label>#}
+{#                            <input type="text" name="textfield18" id="textfield18" required/>#}
+{#                        </div>#}
+{##}
+{##}
+{#                        <div class="form-submit">#}
+{#                            <input type="submit" value="Reset All" class="submit" name="reset" id="reset" />#}
+{#                            <input type="submit" class="submit" name="button" id="button" value="Register"  />#}
+{#                        </div>#}
+{#                    </form>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#    </div>#}
+{#   </form>#}
+{#    <!-- JS -->#}
+{#    <script src="/static/registration/vendor/jquery/jquery.min.js"></script>#}
+{#    <script src="/static/registration/js/main.js"></script>#}
+{##}
+{#</body><!-- This templates was made by Colorlib (https://colorlib.com) -->#}
+{#</html>#}
+<!--<!DOCTYPE html>-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User registration</title>
+    <script>
+function validateForm() {
+   var pw1 = document.getElementById("cnpassword").value;
+  var pw2 = document.getElementById("password").value;
+
+  if(pw1 != pw2)
+  {
+
+    alert("Password mismatch!");
+    return false;
+}
+}
+</script>
+<script>
+function myFunction() {
+  var pw1 = document.getElementById("cnpassword");
+  var pw2 = document.getElementById("password");
+  alert("qwert");
+  if(pw1 != pw2)
+  {
+    document.getElementById("pwv").innerHTML = "Password mismatch!";
+  } else {
+   document.getElementById("pwv").innerHTML = "";
+ }
+}
+</script>
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="/static/registration/fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="/static/registration/vendor/nouislider/nouislider.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="/static/registration/css/style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-img">
+                    <img src="/static/registration/images/form-img.jpg" alt="">
+                    <div class="signup-img-content">
+                        <h2>Register now </h2>
+                        <p>Let's discover your future together!</p>
+                    </div>
+                </div>
+                <div class="signup-form">
+                   <form  class="register-form" method="post" onsubmit="return validateForm()" >
+                        <div class="form-row">
+                            <div class="form-group">
+                                <div class="form-input">
+                                    <label for="name" class="required">Name</label>
+                                    <input type="text" name="name" id="name" placeholder="Your name" required pattern="[A-Za-z ]{3,50}"/>
+                                </div>
+
+                               <div class="form-input">
+                                        <label for="age" class="required">Age</label>
+                                        <select name="age" id="famly" class="select-list" required>
+                                            <option value="">Select</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                        </select>
+                                    </div>
+
+                                <div class="form-radio">
+                                    <div class="label-flex">
+                                        <label for="Gender">Gender</label>
+                                       <!--- <a href="#" class="form-link">Payment Detail</a>-->
+                                    </div>
+                                    <div class="form-radio-group">
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="gender" id="male" value="male" checked>
+                                            <label for="male">Male</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="gender" id="female" value="female">
+                                            <label for="female">Female</label>
+                                            <span class="check"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                  <div class="form-input">
+                                    <label for="place" class="required">Place</label>
+                                    <input type="text" name="place" id="place" placeholder="Your Place" required pattern="[A-Za-z ]{3,50}"/>
+                                </div>
+                                <div class="form-input">
+                                    <label for="phone" class="required">Contact Number</label>
+                                    <input type="text" name="phone" id="phone" placeholder="Your phone number"  pattern="[6789][0-9]{9}" maxlength="10" required/>
+                                </div>
+{#                                  <div class="form-radio">#}
+{#                                    <div class="label-flex">#}
+{#                                        <label for="fmlystatus">Family Income Status</label>#}
+                                       <!--- <a href="#" class="form-link">Payment Detail</a>-->
+
+                                        <div class="form-input">
+                                        <label for="fmly" class="required">Income Status</label>
+                                        <select name="famly" id="famly" class="select-list" required>
+                                            <option value="">Select</option>
+                                            <option value="low">Below Average</option>
+                                            <option value="average">Average</option>
+                                            <option value="middle">Above Average</option>
+                                        </select>
+                                    </div>
+{#                                    <div class="form-radio-group">#}
+{#                                        <div class="form-radio-item">#}
+{#                                            <input type="radio" name="famly" id="below"  value="low" checked>#}
+{#                                            <label for="low">Below Average</label>#}
+{#                                            <span class="check"></span>#}
+{#                                        </div>#}
+{#                                        <div class="form-radio-item">#}
+{#                                            <input type="radio" name="famly" id="average" value="average">#}
+{#                                            <label for="average">Average</label>#}
+{#                                            <span class="check"></span>#}
+{#                                        </div>#}
+{#                                        <div class="form-radio-item">#}
+{#                                            <input type="radio" name="famly" id="above" value="middle">#}
+{#                                            <label for="above">Above Average</label>#}
+{#                                            <span class="check"></span>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+                                <div class="form-input">
+                                        <label for="qualification" class="required">Highest Qualification</label>
+                                        <select name="qualification" id="qualification" class="select-list" required>
+                                            <option value="">Select</option>
+                                            <option value="10">10th</option>
+                                            <option value="11">11th</option>
+                                            <option value="12">12th</option>
+                                        </select> </div>
+
+                                   <div class="form-input">
+                                        <label for="stream" class="required">Stream</label>
+                                        <select name="stream" id="stream" class="select-list" required>
+                                            <option value="">Select</option>
+                                            <option value="science">science</option>
+                                            <option value="humanities">humanities</option>
+                                            <option value="commerce">commerce</option>
+                                            <option value="others">others</option>
+                                        </select> </div>
+                               <div class="form-input">
+                                        <label for="interest" class="required">Area of Interest </label>
+                                        <select name="interest" id="interest" class="select-list" required>
+                                            <option value="">Select</option>
+                                            <option value="building">Building new things</option>
+                                            <option value="healthcare">Healthcare</option>
+                                            <option value="technology">Technology</option>
+                                            <option value="coding">Programming</option>
+                                            <option value="volunteering">volunteering</option>
+                                            <option value="arts">Arts and Culture </option>
+                                            <option value="law">Public service and advocating</option>
+
+                                        </select>
+                                    </div>
+
+                            </div>
+                              <!--  <div class="form-input">
+                                    <label for="height" class="required">Height</label>
+                                    <input type="text" name="height" id="height" placeholder="Your Height" required/>
+                                </div>
+
+                                <div class="form-input">
+                                    <label for="weight" class="required">Weight</label>
+                                    <input type="text" name="weight" id="weight" placeholder="Your Weight" required/>
+                                </div>
+
+
+                                <div class="form-input">
+                                    <label for="tongue" class="required">Mother Tongue</label>
+                                    <input type="text" name="mthr" id="mthr" placeholder="Your mothertongue " required/>
+                                </div> -->
+                               <!-- <div class="form-input">
+                                    <label for="phy" class="required">Any Physical Disability</label>
+                                    <input type="text" name="phy" id="phy" placeholder="Yes / No " required/>
+                                </div> -->
+
+                               <!-- <div class="form-input">
+                                    <label for="hobby" class="required">Hobby</label>
+                                    <input type="text" name="hobby" id="hobby" placeholder="your Hobby" required/>
+                                </div> -->
+                                <!-- <div class="form-input">
+                                    <label for="institute" class="required">Institution</label>
+                                    <input type="text" name="institute" id="institute" placeholder="Institution name" required/>
+                                </div> -->
+
+
+                            <div class="form-group">
+                                <div class="form-input">
+                                    <label for="mark" class="required">Aggregate Percentage</label>
+                                    <input type="text" name="mark" id="mark" placeholder="Your average mark in percentage" required pattern="[0-9]{1,2}"/>
+                                </div>
+                                  <div class="form-input">
+                                        <label for="skillone" class="required">Skill 1 </label>
+                                        <select name="skillone" id="skillone"class="select-list" required>
+                                            <option value="">Select</option>
+                                            <option value="1">Communication Skill</option>
+                                            <option value="2">Active learning</option>
+                                            <option value="3">Leadership skill</option>
+                                            <option value="4">Artistic Skils</option>
+                                            <option value="5">Programming Skills </option>
+                                            <option value="6">Critical Thinking and problem solving</option>
+                                            <option value="7">Organization and attention to details</option>
+                                            <option value="8">Competitive skills</option>
+
+                                        </select>
+                                    </div>
+
+
+                                  <div class="form-input">
+                                        <label for="skilltwo" class="required">Skill 2 </label>
+                                        <select name="skilltwo" id="skilltwo" class="select-list" required>
+                                            <option value="">Select</option>
+                                            <option value="1">Communication Skill</option>
+                                            <option value="2">Active learning</option>
+                                            <option value="3">Leadership skill</option>
+                                            <option value="4">Artistic Skils</option>
+                                            <option value="5">Programming Skills </option>
+                                            <option value="6">Critical Thinking and problem solving</option>
+                                            <option value="7">Organization and attention to details</option>
+                                            <option value="8">Competitive skills</option>
+
+                                        </select>
+                                    </div>
+
+                                     <div class="form-input">
+                                    <label for="skillthree" class="required">Skill 3</label>
+                                        <select required name="skillthree" id="skillthree" class="select-list">
+                                            <option value="">Select</option>
+                                            <option value="1">Communication Skill</option>
+                                            <option value="2">Active learning</option>
+                                            <option value="3">Leadership skill</option>
+                                            <option value="4">Artistic Skils</option>
+                                            <option value="5">Programming Skills </option>
+                                            <option value="6">Critical Thinking and problem solving</option>
+                                            <option value="7">Organization and attention to details</option>
+                                            <option value="8">Competitive skills</option>
+
+                                        </select>
+                                </div>
+                                 <div class="form-input">
+                                     <label for="skillfour" class="required">Skil 4</label>
+                                        <select required name="skillfour" id="skillfour" class="select-list">
+                                            <option  value="">Select</option>
+                                            <option value="1">Communication Skill</option>
+                                            <option value="2">Active learning</option>
+                                            <option value="3">Leadership skill</option>
+                                            <option value="4">Artistic Skils</option>
+                                            <option value="5">Programming Skills </option>
+                                            <option value="6">Critical Thinking and problem solving</option>
+                                            <option value="7">Organization and attention to details</option>
+                                            <option value="8">Competitive skills</option>
+
+                                        </select>
+                                </div>
+                                 <!-- <div class="form-select">
+                                    <div class="label-flex">
+                                        <label for="stream">Stream</label>
+                                    </div>
+                                    <div class="select-list">
+                                        <select name="stream" id="stream" class="select-list">
+                                            <option>Select</option>
+                                            <option value=" science">science</option>
+                                            <option value="humanities">humanities</option>
+                                            <option value="commerce">commerce</option>
+                                            <option value="others">others</option>
+                                        </select>
+                                    </div>
+                                </div> -->
+
+                               <!-- <div class="form-input">
+                                    <label for="toyear" class="required">Year of passing</label>
+                                    <input type="date" name="toyr" id="toyr" placeholder="To year" required/>
+                                </div> -->
+
+                                <div class="form-input">
+                                    <label for="email" class="required">Email ID</label>
+                                    <input type="email" name="email" id="email" placeholder="your email id" required/>
+                                </div>
+                                <div class="form-input">
+                                    <label for="password" class="required">Password</label>
+                                    <input type="password" name="password" id="password" placeholder="your Password" required/>
+                                </div>
+                                <div class="form-input">
+                                    <label for="cnpassword" class="required" >Confirm Password</label>
+                                    <input type="password" name="cnpassword" id="cnpassword" placeholder="Confirm Password" required/><p id="pwv"></p>
+                                </div>
+
+                             </div>
+                            </div>
+
+
+                        <div class="form-submit">
+                           <!-- <input type="submit" value="Register" class="submit" id="submit" name="submit" />
+                            <input type="submit" value="Reset" class="submit" id="reset" name="reset" />-->
+                            <button type="submit" class="submit" id="submit" name="submit">Register</button>
+                            <button type="reset" class="submit" id="reset" name="reset">Reset</button>
+                        </div>
+                        </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="/static/registration/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/registration/vendor/nouislider/nouislider.min.js"></script>
+    <script src="/static/registration/vendor/wnumb/wNumb.js"></script>
+    <script src="/static/registration/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="/static/registration/vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="/static/registration/js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

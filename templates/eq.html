@@ -1,0 +1,69 @@
+{% extends "admin_home.html" %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>view students</title>
+</head>
+<body>
+
+<form action="" method="get" width="100%">
+
+    <table border="1" height="50%" class="table table-hover" cellspacing="15" cellpadding="15">
+        <p> EQ TEST RESULT</p>
+  <tr style="font-family: Lato ;font-size: small; width: 50%">
+
+
+
+    <td>Extraversion</td>
+<td>Agreeableness</td>
+<td>Conscientiousness</td>
+<td>Neuroticism</td>
+<td>Openess</td>
+
+    </tr>
+  {% for i in data %}
+  <tr style="font-family: Lato ;font-size: small; width: 50%">
+
+    <td>{{ i['extroversion'] }}&nbsp;</td>
+    <td>{{ i['agreeableness'] }}&nbsp;</td>
+    <td>{{ i['conscientiousness'] }}&nbsp;</td>
+    <td>{{ i['neuroticism'] }}&nbsp;</td>
+    <td>&nbsp;{{ i['openess'] }}</td>
+
+
+
+  </tr>
+    {% endfor %}
+</table>
+
+    <BR>
+        <table border="1" height="50%" class="table table-hover" cellspacing="15" cellpadding="15">
+        <p> IQ TEST RESULT</p>
+  <tr style="font-family: Lato ;font-size: small; width: 50%">
+
+
+
+    <td>Mark</td>
+<td>Time</td>
+
+
+
+    </tr>
+  {% for i in data1 %}
+  <tr style="font-family: Lato ;font-size: small; width: 50%">
+
+    <td>{{ i['mark'] }}&nbsp;</td>
+    <td>{{ i['time'] }}&nbsp;</td>
+
+
+
+  </tr>
+    {% endfor %}
+</table>
+
+</form>
+</body>
+</html>
+{% endblock %}
